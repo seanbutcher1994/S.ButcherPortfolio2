@@ -7,19 +7,6 @@ body {
     background-color: var(--light);
 }
 
-.j {
-    flex: 40%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 150px;
-}
-
-.f {
-    flex: 43.7%;
-    padding-left: 10px;
-    justify-content:end;
-}
 
 
 nav a {
@@ -33,12 +20,26 @@ nav a {
     }
 
 p {
-    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    padding-right: 150px;
+    padding-right: 10px;
     color: var(--dark);
+    text-align: justify;
 }
+
+.imgcolumn1:hover {
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease;
+    
+}
+
+.imgcolumn:hover {
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease;
+}
+    
 
 .header {
     background-color: var(--dark);
@@ -56,7 +57,12 @@ p {
     background-image: url(./images/background.image.jpeg);
     background-size: cover;
     background-position: center;
+
  }
+.pjct1img {
+    color: var(--dark);
+}
+
 
  .flex-container {
     display: flex;
@@ -65,19 +71,72 @@ p {
  }
 
  .flex-item-left {
-    flex: 20%;
+    flex: 25%;
+    max-width: 25%;
     justify-content: right;
     border-style: solid;
     border-left: var(--dark);
     border-top: var(--dark);
     border-bottom: var(--dark);
 
- }
+    
+}
+
+.contactcolumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
+    color: var(--dark);
+    text-decoration: none;
+
+
+
+}
+.imgcolumn {
+    flex: 25%;
+    max-width: 25%;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: relative;
+
+}
+
+.imgcolumn1 {
+    flex: 50%;
+    max-width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.Logo {
+position: absolute;
+top: 75%;
+left: 25%;
+}
+
+.Centretxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 100px;
+}
+
+
+.Centretxt1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 100px;
+}
 
 .flex-item-right {
-    flex: 80%;
+    flex: 25%;
+    max-width: 25%;
  }
-
 
  .About {
     float:right;
@@ -94,19 +153,58 @@ p {
 
  }
 
- .Projects {
-    float:right;
-    color: var(--dark);
-    padding-right: 10px;
-    padding-top: 10px;
- }
-
- .Project1 {
-    flex: 80%;
+.img {
     padding-left: 10px;
- }
+}
 
- .MainProject {
-    flex: 100%;
- }
+.img2 {
+    padding-top: 10px;
+}
+
+@media (max-width: 820px) {
+    .imgcolumn {
+        flex: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .flex-item-left {
+       flex: 100%;
+       max-width: 100%;
+        border-style: none;
+        align-items: center;
+    }
+    .avatar {
+    display: none;
+    }
+
+    p {
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: row;
+    }
+    .hero {
+        display: none;
+
+    }
+
+    nav a {
+        align-items: center;
+
+
+    }
+    .flex-container {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .About {
+        flex: 100%;
+        max-width: 100%;
+        align-items: center;
+        padding-left: 130px;
+    }
+    .flex-item-right {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
