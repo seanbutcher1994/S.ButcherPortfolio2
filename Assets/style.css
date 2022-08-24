@@ -1,0 +1,36 @@
+:root {
+    --dark: #00203fff;
+    --light: #ADEFD1DD;
+    }
+
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 25px;
+    }
+
+.header {
+    background-color: var(--dark);
+    padding: 12px;
+    font-size: 17.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    }
+
+.hero {
+    height: 700px;
+    width: 100%;
+    background-image: url(./images/background.image.jpeg);
+    background-size: cover;
+    background-position: center;
+ }
+
+
+
