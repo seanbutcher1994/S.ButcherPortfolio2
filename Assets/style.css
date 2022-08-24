@@ -3,6 +3,24 @@
     --light: #ADEFD1DD;
     }
 
+body {
+    background-color: var(--light);
+}
+
+.j {
+    flex: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 150px;
+}
+
+.f {
+    flex: 43.7%;
+    padding-left: 10px;
+    justify-content:end;
+}
+
 
 nav a {
     color: var(--light);
@@ -13,6 +31,14 @@ nav a {
     display: inline-block;
     margin-left: 25px;
     }
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 150px;
+    color: var(--dark);
+}
 
 .header {
     background-color: var(--dark);
@@ -32,5 +58,55 @@ nav a {
     background-position: center;
  }
 
+ .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+ }
 
+ .flex-item-left {
+    flex: 20%;
+    justify-content: right;
+    border-style: solid;
+    border-left: var(--dark);
+    border-top: var(--dark);
+    border-bottom: var(--dark);
+
+ }
+
+.flex-item-right {
+    flex: 80%;
+ }
+
+
+ .About {
+    float:right;
+    color: var(--dark);
+    padding-top: 10px;
+    padding-right: 10px;
+ }
+
+ .avatar {
+    float:right;
+    color: var(--dark);
+    padding-right: 10px;
+    padding-top: 10px;
+
+ }
+
+ .Projects {
+    float:right;
+    color: var(--dark);
+    padding-right: 10px;
+    padding-top: 10px;
+ }
+
+ .Project1 {
+    flex: 80%;
+    padding-left: 10px;
+ }
+
+ .MainProject {
+    flex: 100%;
+ }
 
