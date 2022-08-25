@@ -70,6 +70,13 @@ p {
     padding-top: 20px;
  }
 
+ .flex-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+ }
+
  .flex-item-left {
     flex: 25%;
     max-width: 25%;
@@ -85,13 +92,23 @@ p {
 .contactcolumn {
     flex: 25%;
     max-width: 25%;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     color: var(--dark);
     text-decoration: none;
 
 
-
+    
 }
+.email {
+    margin-left: 0px;
+}
+.contactcolumn img, .contactcolumn div {
+margin-left: 200px;
+}
+
+
 .imgcolumn {
     flex: 25%;
     max-width: 25%;
@@ -161,50 +178,23 @@ left: 25%;
     padding-top: 10px;
 }
 
-@media (max-width: 820px) {
-    .imgcolumn {
-        flex: 100%;
-        max-width: 100%;
-        padding: 10px;
-    }
-    .flex-item-left {
-       flex: 100%;
-       max-width: 100%;
-        border-style: none;
-        align-items: center;
-    }
-    .avatar {
-    display: none;
-    }
+.Github {
+    text-decoration: none;
+    color: var(--dark);
+}
 
-    p {
-        flex: 100%;
-        max-width: 100%;
-        flex-direction: row;
-    }
+@media only screen and (max-width: 360px) {
+
     .hero {
         display: none;
-
     }
 
-    nav a {
+    .header {
+        flex-direction: column;
         align-items: center;
-
-
+        justify-content: center;
+        font-size: 50%;
     }
-    .flex-container {
-        flex: 100%;
-        max-width: 100%;
-    }
-    .About {
-        flex: 100%;
-        max-width: 100%;
-        align-items: center;
-        padding-left: 130px;
-    }
-    .flex-item-right {
-        flex: 100%;
-        max-width: 100%;
-    }
+    
 }
 
